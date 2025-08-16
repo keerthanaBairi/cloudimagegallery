@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Image Gallery";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center">Image Gallery</h1>
+
+    <div class="row g-3">
+        @foreach (var imageUrl in Model.ImageUrls)
+        {
+            // Safely extract file name from URL (removes query string)
+            var _fileName = System.IO.Path.GetFileName(new System.Uri(imageUrl).LocalPath);
+            <div class="col-md-3 col-sm-6">
+                <div class="card shadow-sm">
+                    <img src="@imageUrl" class="card-img-top" alt="@_fileName" />
+                    <div class="card-body text-center">
+                        <small class="text-muted d-block">@_fileName</small>
+
+                        <!-- Delete button -->
+                        <form method="post" asp-page-handler="Delete" asp-route-fileName="@_fileName" class="mt-2">
+                            <button type="submit" class="btn btn-danger btn-sm"
+                                    onclick="return confirm('Are you sure you want to delete @_fileName?');">
+                                Delete
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <form method="post" enctype="multipart/form-data" class="mt-5">
+        <div class="mb-3">
+            <input type="file" name="UploadedFile" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+</div>

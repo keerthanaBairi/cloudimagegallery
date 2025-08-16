@@ -1,0 +1,14 @@
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\ImageGalleryWeb.exe
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\appsettings.Development.json
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\appsettings.json
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\ImageGalleryWeb.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\ImageGalleryWeb.deps.json
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\ImageGalleryWeb.runtimeconfig.json
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\ImageGalleryWeb.pdb
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\Azure.Core.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\Azure.Storage.Blobs.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\Azure.Storage.Common.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\System.ClientModel.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\System.IO.Hashing.dll
+C:\Users\pramo\OneDrive\Desktop\cloudprojectsiter\ImageGalleryWeb\ImageGalleryWeb\publish\System.Memory.Data.dll

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTOSO CLOUD IMAGE GALLERY</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        #gallery img {
+            max-width: 200px;
+            border-radius: 15px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>CONTOSO CLOUD IMAGE GALLERY</h1>
+    <div id="gallery">Loading images...</div>
+
+    <script>
+        // Change URL if your API runs on a different port
+        
+        fetch("https://imgapi5164.azurewebsites.net/api/images")
+            .then(response => response.json())
+            .then(data => {
+                const gallery = document.getElementById("gallery");
+                gallery.innerHTML = ""; // Clear "Loading..."
+                data.forEach(url => {
+                    const img = document.createElement("img");
+                    img.src = url;
+                    gallery.appendChild(img);
+                });
+            })
+            .catch(err => {
+                document.getElementById("gallery").innerHTML = "Failed to load images.";
+                console.error(err);
+            });
+    </script>
+
+</body>
+</html>
